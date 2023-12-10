@@ -5,6 +5,15 @@ for (let i = 1; i <= n; i++) {
   result *= i;
 }
 console.log(result);
+// way #02
+const fuct = (x) => {
+  if (x === 0) {
+    return 1;
+  } else {
+    return x * fuct(x - 1);
+  }
+};
+console.log(fuct(5));
 
 // Sum of Numbers
 let x = 10;
@@ -13,6 +22,19 @@ for (let b = 0; b <= x; b++) {
   finalSum += b;
 }
 console.log(finalSum);
+
+// way #02
+const termSum = (start, end) => {
+  let sum = 0;
+  for (let i = start; i <= end; i++) {
+    sum += i;
+  }
+  return sum;
+};
+
+console.log(termSum(1, 10));
+
+
 
 // Multiplication Table
 let m = 8;
