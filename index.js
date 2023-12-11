@@ -22,7 +22,6 @@ for (let b = 0; b <= x; b++) {
   finalSum += b;
 }
 console.log(finalSum);
-
 // way #02
 const termSum = (start, end) => {
   let sum = 0;
